@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @company.cep %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @company.endereco %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @company.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @company.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @company.estado %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @company.numero %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

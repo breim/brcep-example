@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  resources :companies do 
+    get 'busca_por_cep', on: :member
+  end
+  
+  root 'companies#index' 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
