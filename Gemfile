@@ -1,6 +1,16 @@
 source 'https://rubygems.org'
 
 
+# Custom Gems
+gem 'brcep'
+
+group :development do
+	gem 'thin'
+	gem 'quiet_assets'
+	gem 'byebug'
+	gem "better_errors"
+end	
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
